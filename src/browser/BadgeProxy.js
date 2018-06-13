@@ -16,9 +16,9 @@
  */
 
 // Instance of the Favico.js libary
-exports.favico = new cordova.plugins.notification.badge.Favico({
-    animation: 'none'
-});
+// exports.favico = new cordova.plugins.notification.badge.Favico({
+//     animation: 'none'
+// });
 
 // Holds the current badge number
 var BADGE_KEY  = 'cordova_badge_number';
@@ -64,7 +64,7 @@ exports.set = function (success, error, args) {
     var badge = args[0];
 
     exports.saveBadge(badge);
-    exports.favico.badge(badge);
+    // exports.favico.badge(badge);
 
     success(badge);
 };
